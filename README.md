@@ -239,8 +239,11 @@ LEFT / RIGHT / OFF
 ## 👨‍💻 Project Presented By
 
 Kavitha Varikuti
+
 B.Tech – Electronics and Communication Engineering
+
 Vector India Major Project
+
 Embedded Systems | CAN | LPC2129
 
 
