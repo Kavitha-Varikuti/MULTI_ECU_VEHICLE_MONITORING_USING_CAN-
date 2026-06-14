@@ -183,9 +183,11 @@ Multi-ECU-Vehicle-Monitoring-Using-CAN/
 ### Output
 
 The LCD displays:
-        <<<<DashBoard>>>>>
+     
 🚦 Indicator Status : LEFT / RIGHT / OFF
+
 🔋 Battery Level : XX %
+
 🌡️ Engine Temperature : XX °C
 
 
