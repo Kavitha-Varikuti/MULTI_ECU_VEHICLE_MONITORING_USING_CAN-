@@ -105,7 +105,7 @@ To design and develop a multi-ECU vehicle monitoring system using the CAN protoc
 ---
 ### 🔄Block Diagram
 
-<img width="1000" height="790" alt="image" src="https://github.com/user-attachments/assets/016e1e7f-1210-497e-af4e-c12f8f6aef5b" />
+<img width="900" height="790" alt="image" src="https://github.com/user-attachments/assets/016e1e7f-1210-497e-af4e-c12f8f6aef5b" />
 
 ----
 ## ⚙️ Implementation Sequence
@@ -196,19 +196,19 @@ LEFT / RIGHT / OFF
 ### Dashboard Display
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b2afa677-492d-49e9-948f-1fc606788741" width="500">
+  <img src="https://github.com/user-attachments/assets/b2afa677-492d-49e9-948f-1fc606788741" width="600">
 </p>
 
 ### Real-Time Monitoring
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ac96fc39-1788-414c-a822-cf90625de8cb" width="500">
+  <img src="https://github.com/user-attachments/assets/ac96fc39-1788-414c-a822-cf90625de8cb" width="600">
 </p>
 
 ### Complete Setup
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a3cbfcad-5d63-4387-9ecf-ea75e6e74a50" width="500">
+  <img src="https://github.com/user-attachments/assets/a3cbfcad-5d63-4387-9ecf-ea75e6e74a50" width="600">
 </p>
 
 ----
@@ -239,11 +239,8 @@ LEFT / RIGHT / OFF
 ## 👨‍💻 Project Presented By
 
 Kavitha Varikuti
-
 B.Tech – Electronics and Communication Engineering
-
 Vector India Major Project
-
 Embedded Systems | CAN | LPC2129
 
 
