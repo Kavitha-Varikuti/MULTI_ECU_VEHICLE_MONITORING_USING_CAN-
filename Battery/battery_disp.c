@@ -1,93 +1,50 @@
-#include <LPC21xx.h>
-#include "lcd.h"
-void StoreCustCharFont(unsigned char p)
+#include <LPC21xx.h>              // Includes LPC21xx microcontroller register definitions
+#include "lcd.h"                  // Includes LCD functions such as cmdlcd() and charlcd()
+
+void StoreCustCharFont(unsigned char p)   // Function to store 0% battery custom character
 {
-unsigned char i;
-unsigned char batt0[8] =
-{
-0x0E,
-0x11,
-0x11,
-0x11,
-0x11,
-0x11,
-0x11,
-0x1F
-};
-cmdlcd(0x40);
-for(i=0;i<8;i++)
-charlcd(batt0[i]);
-}
-void StoreCustCharFont1(unsigned char p)
-{
-unsigned char i;
-unsigned char batt25[8] =
-{
-0x0E,
-0x11,
-0x11,
-0x11,
-0x11,
-0x1F,
-0x1F,
-0x1F
-};
-cmdlcd(0x48);
-for(i=0;i<8;i++)
-charlcd(batt25[i]);
-}
-void StoreCustCharFont2(unsigned char p)
-{
-unsigned char i;
-unsigned char batt50[8] =
-{
-0x0E,
-0x11,
-0x11,
-0x1F,
-0x1F,
-0x1F,
-0x1F,
-0x1F
-};
-cmdlcd(0x50);
-for(i=0;i<8;i++)
-charlcd(batt50[i]);
-}
-void StoreCustCharFont3(unsigned char p)
-{
-unsigned char i;
-unsigned char batt75[8] =
-{
-0x0E,
-0x11,
-0x1F,
-0x1F,
-0x1F,
-0x1F,
-0x1F,
-0x1F
-};
-cmdlcd(0x58);
-for(i=0;i<8;i++)
-charlcd(batt75[i]);
-}
-void StoreCustCharFont4(unsigned char p)
-{
-unsigned char i;
-unsigned char batt100[8] =
-{
-0x0E,
-0x1F,
-0x1F,
-0x1F,
-0x1F,
-0x1F,
-0x1F,
-0x1F
-};
-cmdlcd(0x60);
-for(i=0;i<8;i++)
-charlcd(batt100[i]);
+    unsigned char i;              // Loop variable
+
+    unsigned char batt0[8] =      // Array containing 8 rows of the 0% battery symbol
+    {
+        0x0E,                     // Row 1 pattern
+        0x11,                     // Row 2 pattern
+        0x11,                     // Row 3 pattern
+        0x11,                     // Row 4 pattern
+        0x11,                     // Row 5 pattern
+        0x11,                     // Row 6 pattern
+        0x11,                     // Row 7 pattern
+        0x1F                      // Row 8 pattern
+    };
+
+    cmdlcd(0x40);                 // Set CGRAM address to 0x00 for storing custom character
+
+    for(i=0;i<8;i++)              // Loop through all 8 rows of the character
+        charlcd(batt0[i]);        // Send each row pattern to LCD CGRAM
 }
 
+
+void StoreCustCharFont1(unsigned char p)   // Function to store 25% battery custom character
+{
+    unsigned char i;              // Loop variable
+
+    unsigned char batt25[8] =     // Array containing 8 rows of the 25% battery symbol
+    {
+        0x0E,                     // Row 1 pattern
+        0x11,                     // Row 2 pattern
+        0x11,                     // Row 3 pattern
+        0x11,                     // Row 4 pattern
+        0x11,                     // Row 5 pattern
+        0x1F,                     // Row 6 pattern
+        0x1F,                     // Row 7 pattern
+        0x1F                      // Row 8 pattern
+    };
+
+    cmdlcd(0x48);                 // Set CGRAM address to 0x08 for custom character 1
+
+    for(i=0;i<8;i++)              // Loop through all 8 rows
+        charlcd(batt25[i]);       // Send each row pattern to LCD CGRAM
+}
+
+
+void StoreCustCharFont2(unsigned char p)   //
